@@ -248,6 +248,19 @@ coverage
 # Grunt intermediate storage (https://gruntjs.com/creating-plugins#storing-task-files)
 .grunt
 
+# Terraform generated files
+terraform/.terraform/
+terraform/tfplan
+terraform/.terraform.lock.hcl
+terraform/.ssh/
+# Terraform cache – never commit
+  .terraform/
+  .terraform.lock.hcl
+
+  # Provider binaries that Terraform downloads
+  terraform/.terraform/
+  terraform/.terraform/**
+
 # Bower dependency directory (https://bower.io/)
 bower_components
 
