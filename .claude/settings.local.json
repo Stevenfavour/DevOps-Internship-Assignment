@@ -1,0 +1,7 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(ssh-keygen -t rsa -b 4096 -f \"C:/Users/POPOOLA FAVOUR/Documents/Personal/DevOps Internship Assignment/hiring/terraform/.ssh/id_rsa\" -N \"\")"
+    ]
+  }
+}
