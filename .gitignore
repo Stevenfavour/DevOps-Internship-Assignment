@@ -254,12 +254,19 @@ terraform/tfplan
 terraform/.terraform.lock.hcl
 terraform/.ssh/
 # Terraform cache – never commit
-  .terraform/
-  .terraform.lock.hcl
+  terraform/.terraform/
+  terraform/.terraform.lock.hcl
+  terraform/terraform.tfstate
+    terraform/terraform.tfstate.backup
 
   # Provider binaries that Terraform downloads
   terraform/.terraform/
   terraform/.terraform/**
+  tfplan
+  *.tfstate
+*.tfstate.backup
+.terraform/
+*.tfplan
 
 # Bower dependency directory (https://bower.io/)
 bower_components
